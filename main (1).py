@@ -1,9 +1,8 @@
-def factorial(n):
-  if n == 1 or n == 0:
-    return 1
+def leaprnot(year):
+  if(year%4==0 or (year%4==0 and year%100!=0)):
+    print(f"{year} is a leap year")
   else:
-    return n * factorial(n - 1)
+    print("{} is not a leap year".format(year))
 
-
-num = int(input("Entet the number : "))
-print('The factorial of {} is {}'.format(num, factorial(num)))
+y = int(input("Enter the year :"))
+leaprnot(y)
